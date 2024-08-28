@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+  color: gray;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+th {
+  background-color: #f9f9f9;
+}
+
+.current-day {
+  background-color: #e1f1ff;
+}
+
+.yesterday {
+  background-color: #f0f0f0;
+}
+
+.this-week-day {
+  background-color: #f0f0f0;
+}
+
+.neutral-bg {
+  background-color: #f0f0f0;
+}
+
+.change-positive-bg {
+  background-color: #e0f8e4 !important;
+  color: green;
+}
+
+.change-neutral-bg {
+  background-color: #f9f9f9 !important;
+  color: grey;
+}
+
+.change-negative-bg {
+  background-color: #fdecea !important;
+  color: red;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.chart-row {
+  display: none;
+}
+
+.chart-row.active {
+  display: table-row;
+}
+
+.chart-container {
+  width: 1100px;
+  padding: 20px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.high-bg {
+  background-color: #fdecea;
+  color: red;
+}
+
+.low-bg {
+  background-color: #e0f8e4;
+  color: green;
+}
+
+.change-zero-percent {
+  color: green;
+}
+
+.change-zero-value {
+  color: grey;
+}

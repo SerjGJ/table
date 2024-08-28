@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Таблица с графиком</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Показатель</th>
+            <th class="current-day">Текущий день</th>
+            <th class="yesterday">Вчера</th>
+            <th class="this-week-day">Этот день недели</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-chart="revenue">
+            <td>Выручка, руб</td>
+            <td class="current-day">500 521</td>
+            <td class="change-positive-bg">
+              <span>480 521</span> <span>4%</span>
+            </td>
+            <td class="this-week-day neutral-bg">4 805 121</td>
+          </tr>
+          <tr data-chart="cash">
+            <td>Наличные</td>
+            <td class="current-day">300 000</td>
+            <td class="change-neutral-bg">
+              <span>300 000</span> <span>0%</span>
+            </td>
+            <td class="this-week-day neutral-bg">300 000</td>
+          </tr>
+          <tr data-chart="non-cash">
+            <td>Безналичный расчет</td>
+            <td class="current-day">100 000</td>
+            <td class="change-neutral-bg">
+              <span>100 000</span> <span>0%</span>
+            </td>
+            <td class="this-week-day neutral-bg">100 000</td>
+          </tr>
+          <tr data-chart="credit-cards">
+            <td>Кредитные карты</td>
+            <td class="current-day">100 521</td>
+            <td class="change-neutral-bg">
+              <span>100 521</span> <span>0%</span>
+            </td>
+            <td class="this-week-day neutral-bg">100 521</td>
+          </tr>
+          <tr data-chart="avg-check">
+            <td>Средний чек, руб</td>
+            <td class="current-day">1 300</td>
+            <td class="change-positive-bg">
+              <span>900</span> <span>44%</span>
+            </td>
+            <td class="this-week-day neutral-bg">900</td>
+          </tr>
+          <tr data-chart="avg-guest">
+            <td>Средний гость, руб</td>
+            <td class="current-day">1 200</td>
+            <td class="change-positive-bg">
+              <span>800</span> <span>50%</span>
+            </td>
+            <td class="this-week-day neutral-bg">800</td>
+          </tr>
+          <tr data-chart="removal-after-payment">
+            <td>Удаления из чека (после оплаты), руб</td>
+            <td class="current-day">1 000</td>
+            <td class="change-negative-bg">
+              <span>1 100</span> <span>-9%</span>
+            </td>
+            <td class="this-week-day neutral-bg">900</td>
+          </tr>
+          <tr data-chart="removal-before-payment">
+            <td>Удаления из чека (до оплаты), руб</td>
+            <td class="current-day">1 300</td>
+            <td class="change-neutral-bg">
+              <span>1 300</span> <span>0%</span>
+            </td>
+            <td class="this-week-day neutral-bg">900</td>
+          </tr>
+          <tr data-chart="num-checks">
+            <td>Количество чеков</td>
+            <td class="current-day">34</td>
+            <td class="change-negative-bg"><span>36</span> <span>-6%</span></td>
+            <td class="this-week-day neutral-bg">34</td>
+          </tr>
+          <tr data-chart="num-guests">
+            <td>Количество гостей</td>
+            <td class="current-day">34</td>
+            <td class="change-negative-bg"><span>36</span> <span>-6%</span></td>
+            <td class="this-week-day neutral-bg">32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
